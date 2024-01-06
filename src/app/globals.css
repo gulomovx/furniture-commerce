@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .text-blue{
+    @apply text-[#054C73]
+  }
+}
+.active{
+  color:#ae2951;
+  
+
+}
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
