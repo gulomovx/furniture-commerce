@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import { useSelector, useDispatch } from "react-redux";
 import { data } from "../../../constants/data";
 import Image from "next/image";
-import { Increment, Decrement } from "../../../redux/ItemSlice";
+// import { Increment, Decrement } from "../../../redux/ItemSlice";
 const page = () => {
   const [item, setItem] = useState();
   const cartTotalQuantity = useSelector(
