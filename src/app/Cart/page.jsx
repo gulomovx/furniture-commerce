@@ -23,17 +23,17 @@ const page = () => {
           <div className="border shadow-lg  w-full rounded-lg p-4 ">
             {cartItems?.map((item) => {
               return (
-                <div className="flex items-center bg-slate-50 p-4 rounded-3xl justify-between ">
+                <div className="flex items-center bg-slate-50 my-4 p-4 rounded-3xl justify-between ">
                   <Image src={item.img} alt="img" width={200} height={200} className='w-[300px]  h-[200px]' />
-                  <div className="">
-                    <h1 className="">{item.name}</h1>
+                    <h1 className="text-2xl">{item.name}</h1>
+                  <div className="flex items-center gap-8">
                     <button
                       onClick={() => dispatch(removeItem(item.id))}
                       className="text-red-400"
                     >
                       remove
                     </button>
-                    <div className="flex items-center gap-2 rounded-2xl border">
+                    <div className="flex items-center px-8 gap-4 rounded-2xl border">
                       <button
                         onClick={() => dispatch(increaseItemQuantity(item.id))}
                         className="text-2xl"
